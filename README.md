@@ -1,12 +1,58 @@
-# React + Vite
+# 音乐搜索与播放前端项目
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+本项目基于 React + Vite 构建，实现了音乐搜索、播放等基础功能，界面美观并带有动效。
 
-Currently, two official plugins are available:
+## 项目简介
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+本项目为一个音乐搜索与播放的前端应用，支持：
 
-## Expanding the ESLint configuration
+- 音乐搜索（调用第三方API）
+- 音乐播放与暂停
+- 响应式美观界面与动效
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 目录结构
+
+```
+src/
+	App.jsx         # 主页面组件
+	main.jsx        # 入口文件
+	App.css         # 全局样式
+	index.css       # 入口样式
+	assets/         # 静态资源
+	services/
+		musicApi.js   # 音乐API服务
+public/           # 公共资源
+```
+
+## 安装依赖
+
+```bash
+npm install
+```
+
+## 启动项目
+
+```bash
+npm run dev
+```
+
+浏览器访问 http://localhost:5173 查看效果。
+
+## 功能说明
+
+- 支持音乐关键词搜索，展示搜索结果
+- 支持点击播放、暂停音乐
+- 界面美观，带有基础动效
+
+## 相关文档
+
+- [API 使用说明](./API_USAGE.md)
+- [音乐API文档](./music_api.md)
+
+## 开发建议
+
+- 推荐使用 VS Code 编辑器，配合 ESLint 插件提升代码质量
+- 如需扩展功能，建议使用 TypeScript 进行类型约束
+
+---
+如有问题欢迎提 issue 或交流。
